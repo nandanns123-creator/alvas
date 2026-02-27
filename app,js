@@ -1,0 +1,12 @@
+const button = document.getElementById('colorButton');
+
+button.addEventListener('click', () => {
+    // Generate random color
+    const randomColor = `rgb(${randomValue()}, ${randomValue()}, ${randomValue()})`;
+    document.body.style.backgroundColor = randomColor;
+});
+
+// Function to generate random number between 0-255
+function randomValue() {
+    return Math.floor(Math.random() * 256);
+}
